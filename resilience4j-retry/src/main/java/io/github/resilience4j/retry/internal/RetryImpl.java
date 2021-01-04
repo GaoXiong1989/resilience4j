@@ -20,12 +20,13 @@ package io.github.resilience4j.retry.internal;
 
 import io.github.resilience4j.core.EventConsumer;
 import io.github.resilience4j.core.EventProcessor;
+import io.github.resilience4j.core.IntervalBiFunction;
 import io.github.resilience4j.core.functions.CheckedConsumer;
+import io.github.resilience4j.core.functions.Either;
 import io.github.resilience4j.core.lang.Nullable;
 import io.github.resilience4j.retry.MaxRetriesExceeded;
 import io.github.resilience4j.retry.Retry;
 import io.github.resilience4j.retry.RetryConfig;
-import io.github.resilience4j.core.IntervalBiFunction;
 import io.github.resilience4j.retry.event.*;
 
 import java.util.Collections;
